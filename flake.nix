@@ -36,11 +36,6 @@
         package = pkgs.emacs-git;
       };
 
-      # Define the defaultApp to run Emacs with the custom init file
-      defaultApp = {
-        type = "app";
-        program = "${self.defaultPackage}/bin/emacs";
-      };
 
       # Set up a development shell with Emacs
       devShell = pkgs.mkShell {
